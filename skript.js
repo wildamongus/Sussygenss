@@ -1,4 +1,4 @@
-// Mobile-friendly dropdowns
+// Mobile dropdown tap
 const dropdowns = document.querySelectorAll('.dropdown');
 
 dropdowns.forEach(drop => {
@@ -10,7 +10,7 @@ dropdowns.forEach(drop => {
     });
 });
 
-// Optional: Close dropdowns if clicking outside
+// Close dropdowns if clicking outside
 window.addEventListener('click', function(e){
     if(!e.target.matches('.dropbtn')){
         dropdowns.forEach(drop => {
