@@ -3,14 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sussygenss - Staff & Links</title>
+    <title>Sussygenss - Minecraft Server</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Top Bar -->
+    <div class="topbar">
+        <div class="logo">Sussygenss.minefort.com</div>
+        <div class="nav-top">
+            <a href="#servers">Servers</a>
+            <a href="#staff">Staff</a>
+            <a href="#links">Links</a>
+        </div>
+    </div>
+
+    <!-- Navbar -->
     <header>
         <nav class="navbar">
             <div class="dropdown">
-                <button class="dropbtn">Owners</button>
+                <button class="dropbtn red">Owners</button>
                 <div class="dropdown-content">
                     <div class="role">Co-Owners</div>
                     <div class="staff-name">Ant</div>
@@ -19,7 +30,7 @@
             </div>
 
             <div class="dropdown">
-                <button class="dropbtn">Managers</button>
+                <button class="dropbtn blue">Managers</button>
                 <div class="dropdown-content">
                     <div class="role">Managers</div>
                     <div class="staff-name">Raichu</div>
@@ -30,35 +41,51 @@
             </div>
 
             <div class="dropdown">
-                <button class="dropbtn">Admins</button>
+                <button class="dropbtn red">Admins</button>
                 <div class="dropdown-content">
                     <div class="role">Head Admin</div>
                     <div class="staff-name">Admin</div>
                     <div class="role">Trial Admin</div>
                     <div class="staff-name">Trial Admin</div>
+                    <div class="empty"></div>
                 </div>
             </div>
         </nav>
     </header>
 
-    <main>
-        <section class="links-bar">
-            <a href="https://discord.gg/5GrEebqv6Q" class="link-btn">Sussygenss Discord</a>
-            <a href="https://discord.gg/ZykE4Y9WrX" class="link-btn">Ban Appeals</a>
-            <a href="https://discord.gg/ywENtVTsTa" class="link-btn">WildAmongUs Discord</a>
-            <a href="https://forms.gle/TPhLFN6fyRXpnSWPA" class="link-btn">Apply for Staff</a>
-            <a href="https://www.youtube.com/channel/UCm2sSaTKV2fB2Z-rIbrwwlA" class="link-btn">YouTube</a>
-        </section>
+    <!-- Links Section -->
+    <section id="links" class="links-bar">
+        <a href="https://discord.gg/5GrEebqv6Q" class="link-btn">Sussygenss Discord</a>
+        <a href="https://discord.gg/ZykE4Y9WrX" class="link-btn">Ban Appeals</a>
+        <a href="https://discord.gg/ywENtVTsTa" class="link-btn">WildAmongUs Discord</a>
+        <a href="https://forms.gle/TPhLFN6fyRXpnSWPA" class="link-btn">Apply for Staff</a>
+        <a href="https://www.youtube.com/channel/UCm2sSaTKV2fB2Z-rIbrwwlA" class="link-btn">YouTube</a>
+    </section>
 
-        <section class="servers">
-            <h2>Our Servers</h2>
-            <ul>
-                <li>Prison</li>
-                <li>PvP</li>
-                <li>Gens</li>
-            </ul>
-        </section>
-    </main>
+    <!-- Servers Section -->
+    <section id="servers" class="servers">
+        <h2>Our Servers</h2>
+        <ul>
+            <li>Prison</li>
+            <li>PvP</li>
+            <li>Gens</li>
+        </ul>
+    </section>
+
+    <!-- Filler Section -->
+    <section class="filler">
+        <h2>Welcome to Sussygenss!</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec felis nec risus vehicula luctus.</p>
+        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;</p>
+        <p>Aliquam erat volutpat. Nulla facilisi. Suspendisse potenti.</p>
+        <p>Check out our staff, join the Discord, or apply to become part of the team!</p>
+        <div class="filler-boxes">
+            <div class="box red">Feature 1</div>
+            <div class="box blue">Feature 2</div>
+            <div class="box red">Feature 3</div>
+            <div class="box blue">Feature 4</div>
+        </div>
+    </section>
 
     <script src="script.js"></script>
 </body>
