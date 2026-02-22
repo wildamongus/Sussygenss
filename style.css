@@ -1,30 +1,56 @@
+/* Global */
 body {
-    font-family: 'Minecraft', sans-serif;
-    background: #1a1a1a;
-    color: #fff;
+    font-family: 'Arial', sans-serif;
     margin: 0;
-    padding: 0;
+    background: #121212;
+    color: #fff;
 }
 
-header {
-    background: #2c2c2c;
-    padding: 10px 20px;
+/* Top Bar */
+.topbar {
+    background: #1f1f1f;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 20px;
+    align-items: center;
+    border-bottom: 2px solid #ff0000;
 }
 
+.topbar .logo {
+    font-weight: bold;
+    font-size: 18px;
+    color: #ff5555;
+}
+
+.topbar .nav-top a {
+    margin-left: 15px;
+    color: #55aaff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.topbar .nav-top a:hover {
+    text-decoration: underline;
+}
+
+/* Navbar */
 .navbar {
     display: flex;
     gap: 15px;
+    padding: 10px 20px;
 }
 
 .dropbtn {
-    background-color: #3c3c3c;
-    color: white;
     padding: 10px 20px;
-    font-size: 16px;
     border: none;
-    cursor: pointer;
     border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
 }
+
+.dropbtn.red { background-color: #cc0000; }
+.dropbtn.blue { background-color: #0044cc; }
 
 .dropdown {
     position: relative;
@@ -34,11 +60,11 @@ header {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #3c3c3c;
-    min-width: 180px;
-    box-shadow: 0px 8px 16px rgba(0,0,0,0.4);
-    z-index: 1;
+    background-color: #222;
+    min-width: 200px;
     border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    z-index: 1;
 }
 
 .dropdown-content .role {
@@ -49,37 +75,41 @@ header {
 
 .dropdown-content .staff-name, .dropdown-content .empty {
     padding: 8px 12px;
+    border-bottom: 1px dashed #555;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
+/* Links Bar */
 .links-bar {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    padding: 20px;
+    gap: 12px;
     justify-content: center;
+    padding: 20px;
 }
 
 .link-btn {
-    background-color: #4a90e2;
+    background-color: #cc0000;
     color: white;
-    text-decoration: none;
-    padding: 10px 15px;
+    padding: 12px 18px;
     border-radius: 5px;
-    transition: transform 0.1s, background-color 0.2s;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s;
 }
 
 .link-btn:hover {
-    background-color: #357ab8;
+    background-color: #ff5555;
     transform: scale(1.05);
 }
 
+/* Servers */
 .servers {
     text-align: center;
-    padding: 20px;
+    padding: 30px;
 }
 
 .servers ul {
@@ -89,8 +119,41 @@ header {
 
 .servers li {
     display: inline-block;
-    margin: 0 15px;
-    padding: 8px 12px;
-    background-color: #3c3c3c;
+    margin: 0 20px;
+    padding: 10px 18px;
+    background-color: #0044cc;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Filler Section */
+.filler {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.filler p {
+    max-width: 700px;
+    margin: 10px auto;
+}
+
+.filler-boxes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.filler-boxes .box {
+    width: 150px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
     border-radius: 5px;
 }
+
+.box.red { background-color: #cc0000; }
+.box.blue { background-color: #0044cc; }
