@@ -3,76 +3,80 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sussygenss Links</title>
+<title>Sussygenss Hub</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <h1>Sussygenss Links</h1>
+    <h1>Sussygenss</h1>
+    <p>Join the chaos</p>
 </header>
 
-<section>
+<section class="links-section">
+    <h2>Our Links</h2>
     <div class="links-grid">
         <div class="link-card">
-            <img src="youtube.png" alt="YouTube Logo">
-            <a href="https://www.youtube.com/@SussyGenss" target="_blank">YouTube</a>
+            <img src="youtube.png" alt="YouTube">
+            <h3>YouTube</h3>
+            <a href="https://www.youtube.com/@SussyGenss" target="_blank" class="btn">Visit</a>
         </div>
         <div class="link-card">
-            <img src="instagram.png" alt="Instagram Logo">
-            <a href="https://www.instagram.com/sussygenss" target="_blank">Instagram</a>
+            <img src="instagram.png" alt="Instagram">
+            <h3>Instagram</h3>
+            <a href="https://www.instagram.com/sussygenss" target="_blank" class="btn">Visit</a>
         </div>
         <div class="link-card">
-            <img src="tiktok.png" alt="TikTok Logo">
-            <a href="https://www.tiktok.com/@sussygenss" target="_blank">TikTok</a>
+            <img src="tiktok.png" alt="TikTok">
+            <h3>TikTok</h3>
+            <a href="https://www.tiktok.com/@sussygenss" target="_blank" class="btn">Visit</a>
         </div>
         <div class="link-card">
-            <img src="twitch.png" alt="Twitch Logo">
-            <a href="https://www.twitch.tv/sussygenss" target="_blank">Twitch</a>
+            <img src="twitch.png" alt="Twitch">
+            <h3>Twitch</h3>
+            <a href="https://www.twitch.tv/sussygenss" target="_blank" class="btn">Visit</a>
         </div>
         <div class="link-card">
-            <img src="x.png" alt="X Logo">
-            <a href="https://x.com/SussyGenss" target="_blank">X</a>
+            <img src="x.png" alt="X">
+            <h3>X</h3>
+            <a href="https://x.com/SussyGenss" target="_blank" class="btn">Visit</a>
         </div>
         <div class="link-card">
-            <img src="reddit.png" alt="Reddit Logo">
-            <a href="https://www.reddit.com/r/SussyGenss" target="_blank">Reddit</a>
+            <img src="reddit.png" alt="Reddit">
+            <h3>Reddit</h3>
+            <a href="https://www.reddit.com/r/SussyGenss" target="_blank" class="btn">Visit</a>
         </div>
         <div class="link-card">
-            <img src="discord.png" alt="Discord Logo">
-            <a href="https://discord.gg/9VekkHzZsk" target="_blank">Sussygenss Discord</a>
+            <img src="discord.png" alt="Discord">
+            <h3>Sussygenss Discord</h3>
+            <a href="https://discord.gg/9VekkHzZsk" target="_blank" class="btn">Visit</a>
         </div>
         <div class="link-card">
-            <img src="discord.png" alt="Discord Logo">
-            <a href="https://discord.gg/M68NNJkrmE" target="_blank">Ban Appeals</a>
-        </div>
-        <div class="link-card">
-            <img src="minecraft.png" alt="Minecraft Logo">
-            <a href="https://sussygenss.minefort.com" target="_blank">Minecraft</a>
-        </div>
-    </div>
-
-    <div class="team-container">
-        <h2>Meet the Team</h2>
-        <div class="team-grid">
-            <div class="team-card">
-                <img src="placeholder.png" alt="Team Member">
-                <h3>Member Name</h3>
-                <p>Role / Short Bio</p>
-            </div>
-            <div class="team-card">
-                <img src="placeholder.png" alt="Team Member">
-                <h3>Member Name</h3>
-                <p>Role / Short Bio</p>
-            </div>
+            <img src="minecraft.png" alt="Minecraft">
+            <h3>Minecraft</h3>
+            <p>Version: 1.19+</p>
+            <p>Join our epic server for fun minigames, survival chaos, and more! IP: <b>sussygenss.minefort.com</b></p>
         </div>
     </div>
 </section>
-    
-<footer>
-        <p>&copy; SussyGenss • All chaos reserved</p>
-    </footer>
-    
+
+<section class="gallery-section">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+        <img src="image1.jpg" alt="Screenshot 1" class="gallery-item">
+        <img src="image2.jpg" alt="Screenshot 2" class="gallery-item">
+        <img src="image3.jpg" alt="Screenshot 3" class="gallery-item">
+    </div>
+</section>
+
+<!-- Fullscreen modal -->
+<div id="modal" class="modal">
+    <span id="close">&times;</span>
+    <img id="modal-img" src="" alt="Fullscreen Image">
+    <button id="prev">&#10094;</button>
+    <button id="next">&#10095;</button>
+</div>
+
 <script src="script.js"></script>
 </body>
 </html>
