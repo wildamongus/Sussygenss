@@ -1,7 +1,37 @@
+/* Global styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #121212;
+    color: #f5f5f5;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    background: #1e1e1e;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.links-section {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.links-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
 /* Minecraft Full-Width Banner */
 .minecraft-card {
     width: 100%;
-    display: block; /* ensures it stretches across */
+    display: block;
     text-align: center;
     margin-bottom: 2rem;
     padding: 2rem;
@@ -16,6 +46,22 @@
     box-shadow: 0 6px 25px rgba(0,0,0,0.7);
 }
 
+.minecraft-card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 0.5rem;
+}
+
+.minecraft-card h3 {
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+.minecraft-card p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
 .minecraft-card .ip-bar {
     display: flex;
     justify-content: center;
@@ -24,4 +70,71 @@
     border-left: 3px solid #ff3c3c;
     padding-left: 0.5rem;
     margin: 0.5rem 0;
+}
+
+/* Grid layout for other links */
+.links-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    grid-auto-flow: row; /* fill left → right, row-wise */
+}
+
+/* Cards */
+.link-card {
+    background: #1f1f1f;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.link-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+}
+
+.link-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 0.5rem;
+}
+
+.link-card h3 {
+    margin: 0.5rem 0;
+}
+
+.link-card p {
+    font-size: 0.95rem;
+    color: #ccc;
+    margin-bottom: 0.8rem;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1.2rem;
+    background: #ff3c3c;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #ff1c1c;
+}
+
+/* Responsive: wrap properly on smaller screens */
+@media (max-width: 768px) {
+    .links-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .links-grid {
+        grid-template-columns: 1fr;
+    }
 }
