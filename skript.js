@@ -1,21 +1,14 @@
-// Mobile dropdown tap
-const dropdowns = document.querySelectorAll('.dropdown');
-
-dropdowns.forEach(drop => {
-    drop.addEventListener('click', () => {
-        if(window.innerWidth <= 768){
-            const content = drop.querySelector('.dropdown-content');
-            content.style.display = content.style.display === 'block' ? 'none' : 'block';
-        }
+// Clickable team cards to show info (can replace alert with modal later)
+document.querySelectorAll('.team-card').forEach(card => {
+    card.addEventListener('click', () => {
+        alert('More info coming soon!');
     });
 });
 
-// Close dropdowns if clicking outside
-window.addEventListener('click', function(e){
-    if(!e.target.matches('.dropbtn')){
-        dropdowns.forEach(drop => {
-            const content = drop.querySelector('.dropdown-content');
-            if(window.innerWidth <= 768) content.style.display = 'none';
-        });
-    }
+// Optional: clickable link-card hover effect (makes them feel interactive)
+document.querySelectorAll('.link-card').forEach(card => {
+    card.addEventListener('click', () => {
+        const link = card.querySelector('a').href;
+        window.open(link, '_blank');
+    });
 });
