@@ -1,6 +1,4 @@
-// Optional click logging
-document.querySelectorAll('.btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-        console.log('Link clicked:', btn.previousElementSibling.previousElementSibling.textContent);
-    });
-});
+function copyIP() {
+    navigator.clipboard.writeText("SussyGenss.MineFort.Com");
+    alert("IP copied!");
+}
